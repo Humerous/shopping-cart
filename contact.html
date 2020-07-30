@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shopping Cart</title>
+    <!-- REQUIRED META TAGS -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- FONT AWESOME  -->
+    <script
+      src="https://kit.fontawesome.com/9b318b6a90.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar nav-dark navbar-expand-md sticky-top">
+        <a href="index.html" class="navbar-brand"
+          >David Miller Online Store &reg;</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact us</a>
+            </li>
+            <li class="nav-item cart">
+              <a href="cart.html" class="nav-link"
+                >Cart <i class="fas fa-shopping-cart"> <span> 0</span></i></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- End Navigation -->
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+      <div class="pricing-header px-3 py-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Contact us</h1>
+        <hr />
+      </div>
+    </div>
+    <!-- Contact Us Section -->
+    <section class="Material-contact-section section-padding section-dark">
+      <div class="container">
+        <div class="row">
+          <!-- Section Titile -->
+          <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+            <h1 class="section-title">Love to Hear From You</h1>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Section Titile -->
+          <div
+            class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft"
+            data-wow-delay=".2s"
+          >
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using Content.
+            </p>
+
+            <div class="find-widget">
+              Company:
+              <a href="https://hostriver.ro">Video Image Technologies</a>
+            </div>
+            <div class="find-widget">
+              Address: <a href="#">22b Berkshire Circle Knoxville</a>
+            </div>
+            <div class="find-widget">Phone: <a href="#">+72 380 7335</a></div>
+
+            <div class="find-widget">
+              Website:
+              <a href="https://uny.ro">www.videoimagetechnologies.com</a>
+            </div>
+          </div>
+          <!-- contact form -->
+          <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+            <form
+              class="shake"
+              role="form"
+              method="post"
+              id="contactForm"
+              name="contact-form"
+              data-toggle="validator"
+            >
+              <!-- Name -->
+              <div class="form-group label-floating">
+                <label class="control-label" for="name">Name</label>
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  name="name"
+                  required
+                  data-error="Please enter your name"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- email -->
+              <div class="form-group label-floating">
+                <label class="control-label" for="email">Email</label>
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  data-error="Please enter your Email"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Subject -->
+              <div class="form-group label-floating">
+                <label class="control-label">Subject</label>
+                <input
+                  class="form-control"
+                  id="msg_subject"
+                  type="text"
+                  name="subject"
+                  required
+                  data-error="Please enter your message subject"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Message -->
+              <div class="form-group label-floating">
+                <label for="message" class="control-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  id="message"
+                  name="message"
+                  required
+                  data-error="Write your message"
+                ></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Form Submit -->
+              <div class="form-submit mt-5">
+                <button class="btn btn-common" type="submit" id="form-submit">
+                  <i class="material-icons mdi mdi-message-outline"></i> Send
+                  Message
+                </button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /container -->
+
+    <!-- /.FOOTER BEGIN -->
+    <footer class="container text-center">
+      <hr class="mt-2 mb-5" />
+      <p>
+        <span style="color: #007bff;">&copy;</span> Driven by David Miller &
+        Company 2020
+      </p>
+    </footer>
+    <!-- /.FOOTER BEGIN -->
+
+    <!-- JS SCRIPT -->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- JQUERY. JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- POPPER. JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOOTSTRAP. JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
