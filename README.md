@@ -1,6 +1,6 @@
 # shopping-cart
 
-HTML-CSS-JS-BOOTSRAP4
+JAVASCRIPT-HTML-CSS-BOOTSRAP4
 
 ---
 
