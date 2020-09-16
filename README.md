@@ -1,7 +1,5 @@
 # shopping-cart
 
-JAVASCRIPT-HTML-CSS-BOOTSRAP4
-
 ---
 
 ### Table of Contents
@@ -18,11 +16,6 @@ You're sections headers will be used to reference location of destination.
 ## Description
 
 This is a quick and easy website build with HTML-CSS-JS-BOOTSRAP4 , its my very first every puplished site. Hope you like it.
-
-#### Technologies
-
-- Technology 1
-- Technology 2
 
 [Back To The Top](#read-me-template)
 
