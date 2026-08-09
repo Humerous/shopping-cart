@@ -49,10 +49,20 @@ function syncCartState(cartItems) {
   localStorage.setItem(CART_COUNT_KEY, String(count));
   localStorage.setItem(CART_TOTAL_KEY, String(subtotal));
 
-  const cartCount = document.querySelector('.cart span');
+  const cartLink = document.querySelector('.cart .nav-link');
 
-  if (cartCount) {
-    cartCount.textContent = String(count);
+  if (cartLink) {
+    let cartCount = cartLink.querySelector('.cart-count');
+
+    if (!cartCount) {
+      cartCount =
+        cartLink.querySelector('span') || document.createElement('span');
+
+      cartCount.className = 'cart-count';
+      cartLink.appendChild(cartCount);
+    }
+
+    cartCount.textContent = ` ${count}`;
   }
 }
 
