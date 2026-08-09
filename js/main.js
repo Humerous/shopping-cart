@@ -87,7 +87,12 @@ function changeQuantity(tag, amount) {
 
   const nextQuantity = Number(item.inCart || 0) + amount;
 
-  if (nextQuantity < 1) return;
+  if (nextQuantity <= 0) {
+    delete cartItems[tag];
+    syncCartState(cartItems);
+    displayCart();
+    return;
+  }
 
   item.inCart = nextQuantity;
   cartItems[tag] = item;
