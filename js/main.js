@@ -29,14 +29,15 @@ function readCartItems() {
 function getCartCount(cartItems) {
   return Object.values(cartItems).reduce(
     (total, item) => total + Number(item.inCart || 0),
-    0,
+    0
   );
 }
 
 function getCartSubtotal(cartItems) {
   return Object.values(cartItems).reduce(
-    (total, item) => total + Number(item.price || 0) * Number(item.inCart || 0),
-    0,
+    (total, item) =>
+      total + Number(item.price || 0) * Number(item.inCart || 0),
+    0
   );
 }
 
@@ -49,6 +50,7 @@ function syncCartState(cartItems) {
   localStorage.setItem(CART_TOTAL_KEY, String(subtotal));
 
   const cartCount = document.querySelector('.cart span');
+
   if (cartCount) {
     cartCount.textContent = String(count);
   }
@@ -79,6 +81,7 @@ function changeQuantity(tag, amount) {
 
   item.inCart = nextQuantity;
   cartItems[tag] = item;
+
   syncCartState(cartItems);
   displayCart();
 }
@@ -89,12 +92,14 @@ function removeFromCart(tag) {
   if (!cartItems[tag]) return;
 
   delete cartItems[tag];
+
   syncCartState(cartItems);
   displayCart();
 }
 
 function deliveryOptions() {
   const deliverySelect = document.getElementById('delivery');
+
   if (!deliverySelect) return;
 
   const prices = {
@@ -106,6 +111,7 @@ function deliveryOptions() {
   };
 
   deliveryOptionPrice = prices[deliverySelect.value] ?? 0;
+
   displayCart();
 }
 
@@ -115,6 +121,7 @@ function purchaseClicked() {
 
 function displayCart() {
   const productContainer = document.querySelector('.products');
+
   if (!productContainer) return;
 
   const cartItems = readCartItems();
@@ -122,11 +129,15 @@ function displayCart() {
 
   if (entries.length === 0) {
     syncCartState({});
+
     productContainer.innerHTML = `
       <tr>
-        <td colspan="4" class="text-center py-4">Your cart is empty.</td>
+        <td colspan="4" class="text-center py-4">
+          Your cart is empty.
+        </td>
       </tr>
     `;
+
     return;
   }
 
@@ -142,8 +153,10 @@ function displayCart() {
               tabindex="0"
               aria-label="Remove ${item.name} from cart"
             ></i>
+
             <span>
               <p class="sm-hide">${item.name}</p>
+
               <img
                 src="./images/${tag}.jpg"
                 class="img-fluid img-thumbnail ml-2"
@@ -151,7 +164,11 @@ function displayCart() {
               />
             </span>
           </td>
-          <td class="price sm-hide">R ${item.price},00</td>
+
+          <td class="price sm-hide">
+            R ${item.price},00
+          </td>
+
           <td class="quantity">
             <ion-icon
               class="decrease"
@@ -161,7 +178,9 @@ function displayCart() {
               tabindex="0"
               aria-label="Decrease ${item.name} quantity"
             ></ion-icon>
+
             <span>${item.inCart}</span>
+
             <ion-icon
               class="increase"
               data-increase="${tag}"
@@ -171,9 +190,12 @@ function displayCart() {
               aria-label="Increase ${item.name} quantity"
             ></ion-icon>
           </td>
-          <td class="total">R ${Number(item.inCart) * Number(item.price)},00</td>
+
+          <td class="total">
+            R ${Number(item.inCart) * Number(item.price)},00
+          </td>
         </tr>
-      `,
+      `
     )
     .join('');
 
@@ -182,33 +204,65 @@ function displayCart() {
 
   productContainer.innerHTML = `
     ${productRows}
+
     <tr>
       <td colspan="4">
         <form>
           <div class="form-group">
             <label for="delivery">Delivery options</label>
-            <select class="form-control custom-select" name="delivery" id="delivery">
-              <option value="0">0 - Free Collection from warehouse</option>
-              <option value="1">1 - R90,00 delivery fee, anywhere in Cape Town area</option>
-              <option value="2">2 - R140,00 delivery fee, anywhere in local province</option>
-              <option value="3">3 - R180,00 delivery fee, outside province</option>
-              <option value="4">4 - R230,00 delivery fee, International</option>
+
+            <select
+              class="form-control custom-select"
+              name="delivery"
+              id="delivery"
+            >
+              <option value="0">
+                0 - Free Collection from warehouse
+              </option>
+
+              <option value="1">
+                1 - R90,00 delivery fee, anywhere in Cape Town area
+              </option>
+
+              <option value="2">
+                2 - R140,00 delivery fee, anywhere in local province
+              </option>
+
+              <option value="3">
+                3 - R180,00 delivery fee, outside province
+              </option>
+
+              <option value="4">
+                4 - R230,00 delivery fee, International
+              </option>
             </select>
           </div>
         </form>
+
         <div class="basketTotal">
           <div class="mt-2">
             <h4 class="basketTotalTitle">Basket Total</h4>
           </div>
+
           <div class="d-flex">
             <div class="text-right mt-4">
-              <label class="text-muted font-weight-normal m-0">Total price plus shipping</label>
+              <label class="text-muted font-weight-normal m-0">
+                Total price plus shipping
+              </label>
+
               <div class="text-large mt-2">
-                <strong>R ${Math.round(totalAmountInCart)},00 inc VAT</strong>
+                <strong>
+                  R ${Math.round(totalAmountInCart)},00 inc VAT
+                </strong>
               </div>
             </div>
           </div>
-          <button type="button" id="confirm-order" class="btn myButton btn-md mt-3">
+
+          <button
+            type="button"
+            id="confirm-order"
+            class="btn myButton btn-md mt-3"
+          >
             Confirm Order
           </button>
         </div>
@@ -217,6 +271,7 @@ function displayCart() {
   `;
 
   const deliverySelect = document.getElementById('delivery');
+
   if (deliverySelect) {
     const deliveryValue = Object.entries({
       0: 0,
@@ -231,20 +286,24 @@ function displayCart() {
   }
 
   document.querySelectorAll('[data-decrease]').forEach((control) => {
-    control.addEventListener('click', () =>
-      changeQuantity(control.dataset.decrease, -1),
-    );
+    control.addEventListener('click', () => {
+      changeQuantity(control.dataset.decrease, -1);
+    });
   });
 
   document.querySelectorAll('[data-increase]').forEach((control) => {
-    control.addEventListener('click', () =>
-      changeQuantity(control.dataset.increase, 1),
-    );
+    control.addEventListener('click', () => {
+      changeQuantity(control.dataset.increase, 1);
+    });
   });
 
   document.querySelectorAll('[data-remove]').forEach((control) => {
-    const remove = () => removeFromCart(control.dataset.remove);
+    const remove = () => {
+      removeFromCart(control.dataset.remove);
+    };
+
     control.addEventListener('click', remove);
+
     control.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
@@ -254,13 +313,16 @@ function displayCart() {
   });
 
   const confirmOrder = document.getElementById('confirm-order');
+
   if (confirmOrder) {
     confirmOrder.addEventListener('click', purchaseClicked);
   }
 }
 
 document.querySelectorAll('.add-cart').forEach((button, index) => {
-  button.addEventListener('click', () => addToCart(products[index]));
+  button.addEventListener('click', () => {
+    addToCart(products[index]);
+  });
 });
 
 syncCartState(readCartItems());
