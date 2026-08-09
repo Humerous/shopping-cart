@@ -146,13 +146,14 @@ function displayCart() {
       ([tag, item]) => `
         <tr>
           <td class="product">
-            <i
-              class="fas fa-trash-alt"
+            <button
+              type="button"
+              class="btn p-0 mr-2 align-top"
               data-remove="${tag}"
-              role="button"
-              tabindex="0"
               aria-label="Remove ${item.name} from cart"
-            ></i>
+            >
+              <i class="fas fa-trash-alt" aria-hidden="true"></i>
+            </button>
 
             <span>
               <p class="sm-hide">${item.name}</p>
@@ -170,25 +171,33 @@ function displayCart() {
           </td>
 
           <td class="quantity">
-            <ion-icon
-              class="decrease"
+            <button
+              type="button"
+              class="btn p-0"
               data-decrease="${tag}"
-              name="arrow-dropleft-circle"
-              role="button"
-              tabindex="0"
               aria-label="Decrease ${item.name} quantity"
-            ></ion-icon>
+            >
+              <ion-icon
+                class="decrease"
+                name="arrow-dropleft-circle"
+                aria-hidden="true"
+              ></ion-icon>
+            </button>
 
             <span>${item.inCart}</span>
 
-            <ion-icon
-              class="increase"
+            <button
+              type="button"
+              class="btn p-0"
               data-increase="${tag}"
-              name="arrow-dropright-circle"
-              role="button"
-              tabindex="0"
               aria-label="Increase ${item.name} quantity"
-            ></ion-icon>
+            >
+              <ion-icon
+                class="increase"
+                name="arrow-dropright-circle"
+                aria-hidden="true"
+              ></ion-icon>
+            </button>
           </td>
 
           <td class="total">
@@ -298,17 +307,8 @@ function displayCart() {
   });
 
   document.querySelectorAll('[data-remove]').forEach((control) => {
-    const remove = () => {
+    control.addEventListener('click', () => {
       removeFromCart(control.dataset.remove);
-    };
-
-    control.addEventListener('click', remove);
-
-    control.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        remove();
-      }
     });
   });
 
