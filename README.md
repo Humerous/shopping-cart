@@ -8,7 +8,7 @@ This repository is preserved as part of my development journey and represents an
 
 ## Live Demo
 
-https://shopping-cart-two.vercel.app/
+[Open Live Demo](https://shopping-cart-two.vercel.app/).
 
 ## Project Status
 
