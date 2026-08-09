@@ -12,29 +12,37 @@ This repository is preserved as part of my development journey and represents an
 
 ## Project Status
 
-**Historical / Learning Project**
+**Restored Working Baseline — 2026**
 
-The original application is being preserved rather than rewritten to appear as current work.
+The original application has been repaired and verified so that its intended shopping-cart behaviour works correctly again.
 
-Original archived state:
+The current `master` branch is the stable restored baseline.
+
+The untouched historical source is preserved by the Git tag:
 
 `archive-2022-original`
 
-## What I Built
+A separate modernisation phase is planned so the original learning project can remain preserved while a newer portfolio-quality version is developed independently.
 
-The project demonstrates:
+## Restored Functionality
 
-- Product catalogue layout
+The verified working baseline includes:
+
+- Product catalogue
 - Add-to-cart functionality
-- Shopping-cart quantity management
-- Browser `localStorage`
-- Product total calculations
+- Visible cart item counter
+- Cart count persistence between pages and refreshes
+- Quantity increase and decrease controls
+- Automatic line-item removal when quantity reaches zero
+- Direct product removal
+- Browser `localStorage` state
+- Product subtotal calculations
 - Delivery-option calculations
-- VAT calculation
-- Product removal
+- 15% VAT calculation
+- Basket total calculation
 - Multi-page navigation
 - Responsive Bootstrap layout
-- Simulated checkout flow
+- Simulated checkout confirmation
 
 ## Technology
 
@@ -42,7 +50,7 @@ The project demonstrates:
 - CSS
 - JavaScript
 - Bootstrap 4
-- LocalStorage
+- Browser Local Storage
 - Vercel
 
 ## Pages
@@ -54,7 +62,7 @@ The project demonstrates:
 
 ## Known Limitations
 
-This is a learning project rather than a production e-commerce application.
+This remains a historical learning project rather than a production e-commerce application.
 
 Known limitations include:
 
@@ -62,30 +70,40 @@ Known limitations include:
 - No database
 - No real payment processing
 - Checkout is simulated
-- Contact form is not connected to a working submission service
+- Contact form is not connected to a submission service
 - Some content and interface elements are dated
-- Accessibility requires improvement
-- Some HTML structure requires improvement
+- Accessibility can be improved
+- Some HTML structure can be improved
 
-These limitations are intentionally documented rather than hidden because this repository represents an earlier stage of my development journey.
+These limitations are documented rather than hidden because the repository represents an earlier stage of my development journey.
 
 ## Why This Project Is Preserved
 
-This project provides a record of my early practical work with JavaScript and browser-based state.
+This project provides a record of my early practical work with JavaScript, DOM interaction and browser-based state.
 
 It demonstrates progression from foundational front-end development toward more modern software, data, workflow and systems projects.
 
+## Modernisation Plan
+
+The next phase is to create a separate development branch for a modernised version while keeping this restored baseline intact.
+
+Planned branch:
+
+`modernise-2026`
+
+The modernised version can improve the visual design, responsiveness, accessibility, code structure and overall portfolio presentation without erasing the original project history.
+
 ## Running Locally
 
-1. Download or clone the repository.
+1. Clone the repository.
 2. Open the project folder.
 3. Open `index.html` in a web browser.
 
-No build process or package installation is required.
+No build process or package installation is required for the restored historical version.
 
 ## Historical Archive
 
-The original repository state before portfolio documentation work was preserved with the Git tag:
+The original repository state is preserved with the Git tag:
 
 `archive-2022-original`
 
@@ -101,6 +119,6 @@ Copyright (c) 2022 David K Miller
 
 ## Maintenance Status
 
-Historical project.
+Stable historical baseline restored in 2026.
 
-The original application is not being actively developed as a production e-commerce system.
+Further experimentation and redesign should be performed separately from the preserved baseline.
