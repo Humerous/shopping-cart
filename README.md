@@ -22,7 +22,7 @@ The untouched historical source is preserved by the Git tag:
 
 `archive-2022-original`
 
-A separate modernisation phase is planned so the original learning project can remain preserved while a newer portfolio-quality version is developed independently.
+Any future redesign or experimentation can be developed separately so this restored historical version remains preserved.
 
 ## Restored Functionality
 
@@ -83,15 +83,11 @@ This project provides a record of my early practical work with JavaScript, DOM i
 
 It demonstrates progression from foundational front-end development toward more modern software, data, workflow and systems projects.
 
-## Modernisation Plan
+## Future Development
 
-The next phase is to create a separate development branch for a modernised version while keeping this restored baseline intact.
+A modernised version may be developed separately in future so the restored historical project can remain preserved while newer design and engineering approaches are explored.
 
-Planned branch:
-
-`modernise-2026`
-
-The modernised version can improve the visual design, responsiveness, accessibility, code structure and overall portfolio presentation without erasing the original project history.
+No future branch or redesign is treated as part of the current stable version until that work actually begins.
 
 ## Running Locally
 
@@ -121,4 +117,4 @@ Copyright (c) 2022 David K Miller
 
 Stable historical baseline restored in 2026.
 
-Further experimentation and redesign should be performed separately from the preserved baseline.
+Any future experimentation or redesign should be performed separately from the preserved baseline.
