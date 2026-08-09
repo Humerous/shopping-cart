@@ -66,7 +66,6 @@ Known limitations include:
 - Some content and interface elements are dated
 - Accessibility requires improvement
 - Some HTML structure requires improvement
-- Delivery pricing contains an inconsistency between the interface and JavaScript calculation
 
 These limitations are intentionally documented rather than hidden because this repository represents an earlier stage of my development journey.
 
