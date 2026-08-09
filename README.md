@@ -1,75 +1,107 @@
-# shopping-cart
+# Shopping Cart
 
-- deployed at - https://shopping-cart-two.vercel.app/
+**Historical Learning Project — 2022**
 
-### Table of Contents
-You're sections headers will be used to reference location of destination.
+An early e-commerce learning project built during my development training using HTML, CSS, JavaScript and Bootstrap 4.
 
-- [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
+This repository is preserved as part of my development journey and represents an early stage of learning front-end development, DOM manipulation and browser-based application logic.
 
----
+## Live Demo
 
-## Description
+https://shopping-cart-two.vercel.app/
 
-This is a quick and easy website build with HTML-CSS-JS-BOOTSRAP4 , its my very first every puplished site. Hope you like it.
+## Project Status
 
-[Back To The Top](#read-me-template)
+**Historical / Learning Project**
 
----
+The original application is being preserved rather than rewritten to appear as current work.
 
-## How To Use
+Original archived state:
 
-#### Installation
+`archive-2022-original`
 
-01._Download the zip repository .
-02._Unzip 
-03._Right clcik on the (index.html file) in the folder and there you go.
-04._ENJOY!
+## What I Built
 
----
+The project demonstrates:
 
-## References
+- Product catalogue layout
+- Add-to-cart functionality
+- Shopping-cart quantity management
+- Browser `localStorage`
+- Product total calculations
+- Delivery-option calculations
+- VAT calculation
+- Product removal
+- Multi-page navigation
+- Responsive Bootstrap layout
+- Simulated checkout flow
 
-Hyperion Development Bootcamp
+## Technology
 
-[Back To The Top](#read-me-template)
+- HTML
+- CSS
+- JavaScript
+- Bootstrap 4
+- LocalStorage
+- Vercel
 
----
+## Pages
+
+- Home
+- About
+- Contact
+- Shopping Cart
+
+## Known Limitations
+
+This is a learning project rather than a production e-commerce application.
+
+Known limitations include:
+
+- No application backend
+- No database
+- No real payment processing
+- Checkout is simulated
+- Contact form is not connected to a working submission service
+- Some content and interface elements are dated
+- Accessibility requires improvement
+- Some HTML structure requires improvement
+- Delivery pricing contains an inconsistency between the interface and JavaScript calculation
+
+These limitations are intentionally documented rather than hidden because this repository represents an earlier stage of my development journey.
+
+## Why This Project Is Preserved
+
+This project provides a record of my early practical work with JavaScript and browser-based state.
+
+It demonstrates progression from foundational front-end development toward more modern software, data, workflow and systems projects.
+
+## Running Locally
+
+1. Download or clone the repository.
+2. Open the project folder.
+3. Open `index.html` in a web browser.
+
+No build process or package installation is required.
+
+## Historical Archive
+
+The original repository state before portfolio documentation work was preserved with the Git tag:
+
+`archive-2022-original`
+
+## Training Context
+
+Originally developed during the Hyperion Development Bootcamp.
 
 ## License
 
 MIT License
 
-Copyright (c) [2022] [David K Miller]
+Copyright (c) 2022 David K Miller
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Maintenance Status
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Historical project.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-[Back To The Top](#read-me-template)
-
----
-
-## Author Info
-
-- Twitter - [@DavidMillerster](https://twitter.com/DavidMillerster)
-
-[Back To The Top](#read-me-template)
+The original application is not being actively developed as a production e-commerce system.
