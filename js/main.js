@@ -158,7 +158,7 @@ function deliveryOptions() {
   } else if (deliveryOptions == '3') {
     deliveryOptionPrice = 180;
   } else if (deliveryOptions == '4') {
-    deliveryOptionPrice = 210;
+    deliveryOptionPrice = 230;
   } else {
     alert('Please select an option');
   }
