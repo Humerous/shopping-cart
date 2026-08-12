@@ -4,6 +4,10 @@ A restored and modernised front-end e-commerce project built around a collection
 
 ## Project History
 
+## Live Demo
+
+[Open Live Demo](https://shopping-cart-two.vercel.app/)
+
 ### Original Build — 2022
 
 This project started as an early front-end development project while I was learning HTML, CSS and JavaScript.
