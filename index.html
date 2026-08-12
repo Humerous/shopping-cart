@@ -1,252 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <title>Shopping Cart</title>
-    <!-- REQUIRED META TAGS -->
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- FONT AWESOME  -->
-    <script
-      src="https://kit.fontawesome.com/9b318b6a90.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS STYLESHEET -->
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <!-- BOOTSTRAP CSS -->
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A restored and modernised JavaScript storefront showing product presentation, cart behaviour, browser storage and responsive front-end development." />
+    <title>David Miller Online Store | Portfolio Project</title>
+    <link
+      rel="icon"
+      href="/assets/brand/favicon.svg"
+      type="image/svg+xml" />
+    <link
+      rel="alternate icon"
+      href="/assets/brand/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/brand/favicon-192.png" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+      href="/css/stylesheet.css" />
   </head>
-  <body>
-    <!-- START NAVIGATION -->
-    <header>
-      <nav class="navbar nav-dark navbar-expand-md sticky-top">
-        <a href="index.html" class="navbar-brand"
-          >David Miller Online Store &reg;</a
-        >
+  <body data-page="shop">
+    <a
+      class="skip-link"
+      href="#main-content"
+      >Skip to content</a
+    >
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a
+          class="brand"
+          href="/index.html"
+          aria-label="David Miller Online Store — Shop">
+          <span
+            class="brand-lockup"
+            aria-hidden="true">
+            <img
+              class="brand-mark"
+              src="/assets/brand/dm-mark-dark.svg"
+              alt=""
+              width="241"
+              height="250" />
+            <span class="brand-wordmark">
+              <span class="brand-name">DAVID MILLER</span>
+              <span class="brand-subline">ONLINE STORE</span>
+            </span>
+          </span>
+        </a>
         <button
-          class="navbar-toggler"
+          class="menu-toggle"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-        >
-          <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+          aria-expanded="false"
+          aria-controls="site-navigation">
+          <span
+            class="menu-toggle-lines"
+            aria-hidden="true"></span>
+          <span class="menu-toggle-label">Menu</span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact us</a>
-            </li>
-            <li class="nav-item cart">
-              <a href="cart.html" class="nav-link"
-                >Cart <i class="fas fa-shopping-cart"> <span> 0</span></i></a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- END NAVIGATION -->
-
-    <!-- MAIN H1 HEADING TAG  FOR PRIMARY MARKETING MESSAGE  -->
-    <div class="pricing-header px-3 py-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">
-        David Miller Online Store <span style="color: #007bff;">&reg;</span>
-      </h1>
-    </div>
-    <!-- START OF IMAGE CONTAINER -->
-    <!-- /.CONTAINER BEGIN -->
-    <div class="container">
-      <hr class="mt-2 mb-5" />
-      <div class="row text-center">
-        <div class="col-lg-4 col-md-4 col-6">
-          <div class="d-block mb-4 h-100">
-            <div class="image">
-              <img
-                class="img-fluid img-thumbnail"
-                src="images/monopoly.jpg"
-                alt="monopoly"
-              />
-              <h6 class="mt-2">Monopoly</h6>
-              <h6>R 350,00</h6>
-              <button type="button" class="btn myButton btn-sm add-cart cart1">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-6">
-          <div class="d-block mb-4 h-100">
-            <div class="image">
-              <img
-                class="img-fluid img-thumbnail"
-                src="images/chess.jpg"
-                alt="chess"
-              />
-              <h6 class="mt-2">Chess</h6>
-              <h6>R 2350,00</h6>
-              <button type="button" class="btn myButton btn-sm add-cart cart2">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-6">
-          <div class="d-block mb-4 h-100">
-            <div class="image">
-              <img
-                class="img-fluid img-thumbnail"
-                src="images/scrabble.jpg"
-                alt="scrabble"
-              />
-              <h6 class="mt-2">Scabble</h6>
-              <h6>R 250,00</h6>
-              <button type="button" class="btn myButton btn-sm add-cart cart3">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <div class="image">
-              <img
-                class="img-fluid img-thumbnail"
-                src="images/battleship.jpg"
-                alt="battleship"
-              />
-              <h6>Battleships</h6>
-              <h6>R 1450,00</h6>
-              <button type="button" class="btn myButton btn-sm add-cart cart4">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-6">
-          <div class="d-block mb-4 h-100">
-            <div class="image">
-              <img
-                class="img-fluid img-thumbnail"
-                src="images/trivialpursuit.jpg"
-                alt="trivial_pursuit"
-              />
-              <h6 class="mt-2">Trivial Pursuit</h6>
-              <h6>R 1150,00</h6>
-              <button type="button" class="btn myButton btn-sm add-cart cart5">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-6">
-          <div class="d-block mb-4 h-100">
-            <div class="image">
-              <img
-                class="img-fluid img-thumbnail"
-                src="images/draughts.jpg"
-                alt="draughts"
-              />
-              <h6 class="mt-2">Draughts</h6>
-              <h6>R 350,00</h6>
-              <button type="button" class="btn myButton btn-sm add-cart cart6">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-6">
-          <div class="d-block mb-4 h-100">
-            <div class="image">
-              <img
-                class="img-fluid img-thumbnail"
-                src="images/cluedo.jpg"
-                alt=""
-              />
-              <h6 class="mt-2">Cluedo</h6>
-              <h6>R 150,00</h6>
-              <button type="button" class="btn myButton btn-sm add-cart cart7">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <div class="image">
-              <img
-                class="img-fluid img-thumbnail"
-                src="images/snakesandladders.jpg"
-                alt="snakes_ladders"
-              />
-              <h6 class="mt-2">Snakes and ladders</h6>
-              <h6>R 75,00</h6>
-              <button type="button" class="btn myButton btn-sm add-cart cart8">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-6">
-          <div href="#" class="d-block mb-4 h-100">
-            <div class="image">
-              <img
-                class="img-fluid img-thumbnail"
-                src="images/risk.jpg"
-                alt="risk"
-              />
-              <h6 class="mt-2">Risk</h6>
-              <h6>R 3500,00</h6>
-              <button type="button" class="btn myButton btn-sm add-cart cart9">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
+        <nav
+          class="site-nav"
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a
+            href="/index.html"
+            aria-current="page"
+            >Shop</a
+          >
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a
+            class="cart-link"
+            href="/cart.html">
+            Cart
+            <span
+              class="cart-count"
+              aria-label="0 items in cart"
+              >0</span
+            >
+          </a>
+        </nav>
       </div>
-    </div>
-    <!-- /.CONTAINER END -->
-    <!-- END OF IMAGE CONTAINER -->
+    </header>
 
-    <!-- /.FOOTER BEGIN -->
-    <footer class="container text-center">
-      <hr class="mt-2 mb-5" />
-       <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Company 🧸 Driven by David Miller, Inc</p>
+    <main id="main-content">
+      <section
+        class="hero shell"
+        aria-labelledby="collection-title">
+        <p class="eyebrow">Classic board games · Portfolio project</p>
+        <h1 id="collection-title">An early project, brought up to date.</h1>
+        <div class="hero-copy">
+          <div class="hero-copy-text">
+            <p>
+              This started as one of my earlier front-end development projects
+              — a small online store built around ten classic board games.
+            </p>
+            <p>The original idea still worked, so I kept it.</p>
+            <p>
+              What has changed is how it has been put together, with clearer
+              structure, better responsive behaviour, improved accessibility
+              and a stronger visual system.
+            </p>
+            <p>
+              The cart still handles the real work: adding products, updating
+              quantities, calculating VAT and delivery, and keeping the order
+              state in the browser.
+            </p>
+          </div>
+          <div class="hero-links">
+            <a
+              class="text-link"
+              href="#collection"
+              >Explore the collection <span aria-hidden="true">↓</span></a
+            >
+            <a
+              class="text-link"
+              href="/about.html"
+              >Read the project story</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="collection shell"
+        id="collection"
+        aria-labelledby="collection-heading">
+        <div class="section-heading">
+          <p class="eyebrow">01 · The collection</p>
+          <h2 id="collection-heading">Ten classic games.</h2>
+        </div>
+        <div
+          class="product-grid"
+          data-products="featured"></div>
+      </section>
+
+      <section
+        class="editorial-break"
+        aria-labelledby="editorial-title">
+        <div class="shell editorial-inner">
+          <p class="eyebrow">Built around a simple idea</p>
+          <h2 id="editorial-title">A simple idea, properly built.</h2>
+          <div class="editorial-copy">
+            <p>
+              The games are familiar. The point of the project is the interface
+              behind them.
+            </p>
+            <p>
+              Product cards, cart actions, quantity controls, delivery options,
+              VAT and order totals all work together as one small storefront.
+            </p>
+            <p>
+              This is not being presented as a full commercial e-commerce
+              platform.
+            </p>
+            <p>
+              It is a portfolio project showing where the original build
+              started, what still worked, and how I would approach the same
+              project now.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="collection shell"
+        aria-labelledby="more-games-heading">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">02 · Continue exploring</p>
+            <h2 id="more-games-heading">One collection. One working cart.</h2>
+          </div>
+          <p>From quick family games to longer strategy games, ten products are enough to test the storefront properly without adding features simply to make the project look bigger.</p>
+        </div>
+        <div
+          class="product-grid"
+          data-products="remaining"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-layout">
+        <div class="footer-top">
+          <a
+            class="footer-brand"
+            href="/index.html"
+            aria-label="David Miller Online Store home">
+            <img
+              class="brand-mark"
+              src="/assets/brand/dm-mark-light.svg"
+              alt=""
+              width="241"
+              height="250" />
+            <span class="brand-wordmark">
+              <span class="brand-name">DAVID MILLER</span>
+              <span class="brand-subline">ONLINE STORE</span>
+            </span>
+          </a>
+
+          <p class="footer-statement">
+            An early development project, rebuilt for the portfolio.
+          </p>
+        </div>
+
+        <nav
+          class="footer-nav"
+          aria-label="Footer navigation">
+          <a href="/index.html" aria-current="page">Shop</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/cart.html">Cart</a>
+        </nav>
+
+
+        <nav class="footer-social" aria-label="Social profiles">
+          <a
+            class="footer-social-link"
+            href="https://www.linkedin.com/in/david-miller-07376015/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="David Miller on LinkedIn — opens in a new tab">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M6.5 8.25H3.25V21H6.5V8.25ZM4.88 3A1.88 1.88 0 1 0 4.88 6.75 1.88 1.88 0 0 0 4.88 3ZM21 13.7C21 9.87 18.96 8.09 16.24 8.09c-2.19 0-3.17 1.2-3.72 2.05V8.25H9.27V21h3.25v-6.31c0-1.66.31-3.27 2.38-3.27 2.04 0 2.07 1.91 2.07 3.38V21H21v-7.3Z"/>
+            </svg>
+          </a>
+
+          <a
+            class="footer-social-link"
+            href="https://github.com/Humerous"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="David Miller on GitHub — opens in a new tab">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.89-.01-1.75-2.78.62-3.37-1.38-3.37-1.38-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05A9.25 9.25 0 0 1 12 6.89c.85 0 1.71.12 2.51.37 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.59.69.49A10.26 10.26 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/>
+            </svg>
+          </a>
+        </nav>
+
+        <div
+          class="footer-divider"
+          aria-hidden="true"></div>
+
+        <div class="footer-bottom">
+          <div class="footer-details">
+            <p>
+              <span class="footer-label">PROJECT</span>
+              <span>Original build</span>
+              <span>2022</span>
+              <span>Restored and modernised</span>
+              <span>2026</span>
+            </p>
+
+            <p>
+              <span class="footer-label">PORTFOLIO</span>
+              <span>Part of my developer portfolio</span>
+              <span>Cape Town, South Africa</span>
+            </p>
+          </div>
+
+          <p class="footer-copyright">
+            &copy; 2026 David Miller
+          </p>
+        </div>
+        <p class="footer-legal">
+          Board-game names and trademarks remain the property of their respective
+          owners. This independent portfolio project is not affiliated with or
+          endorsed by those brands.
+        </p>
+      </div>
     </footer>
-    <!-- /.FOOTER BEGIN -->
-
-    <!-- JS SCRIPT -->
-    <script src="js/main.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
-    <!-- JQUERY. JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- POPPER. JS -->
+    <div
+      class="status-toast"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"></div>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- BOOTSTRAP. JS -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+      type="module"
+      src="/js/main.js"></script>
   </body>
 </html>
