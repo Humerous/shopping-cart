@@ -91,17 +91,17 @@ npm run preview
 
 ## Project Versions
 
-**Original / Legacy Version — v1.0**
-2022 learning project.
+**Original / Legacy Version — v1.0**  
+2022 learning project preserved through repository history.
 
-**Modernised Version — v2.0**
-Restored and modernised in 2026.
+**Modernised Version — v2.0**  
+Restored, modernised and deployed in 2026.
 
-Live links will be added once both versions are deployed.
+The current live deployment is linked above.
 
 ## Project Status
 
-**v2.0 — Complete / Ready for Deployment**
+**v2.0 — Complete / Deployed**
 
 This project forms part of my developer portfolio and shows the progression from an earlier learning project to a modernised, production-ready implementation.
 
