@@ -1,8 +1,14 @@
 # David Miller Online Store
 
+**Restored front-end storefront demonstrating cart state, responsive UI and browser persistence.**
+
 [![Shopping Cart showcase](assets/brand/shopping-cart-showcase-v2.webp)](https://shopping-cart-two.vercel.app/)
 
-A restored and modernised front-end e-commerce project built around a collection of classic board games.
+A modernised e-commerce portfolio project built around a collection of classic board games.
+
+**Live:** [shopping-cart-two.vercel.app](https://shopping-cart-two.vercel.app/)  
+**Stack:** HTML5 · CSS · JavaScript ES Modules · Vite · localStorage  
+**Status:** v2 · Complete / Live
 
 ## Project History
 
@@ -21,10 +27,6 @@ The original version explored:
 - Basic e-commerce interaction
 
 ### Modernised — 2026
-
-## Live Demo
-
-[Open Live Demo](https://shopping-cart-two.vercel.app/)
 
 The original concept was kept, but the project was rebuilt and brought up to current standards.
 
@@ -98,8 +100,6 @@ npm run preview
 
 **Modernised Version — v2.0**  
 Restored, modernised and deployed in 2026.
-
-The current live deployment is linked above.
 
 ## Project Status
 
