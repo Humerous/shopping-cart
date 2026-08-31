@@ -1,6 +1,6 @@
 # David Miller Online Store
 
-[![Shopping Cart showcase](docs/assets/shopping-cart-showcase-v2.webp)](https://shopping-cart-two.vercel.app/)
+[![Shopping Cart showcase](docs/assets/shopping-cart-showcase-v2)](https://shopping-cart-two.vercel.app/)
 
 A restored and modernised front-end e-commerce project built around a collection of classic board games.
 
