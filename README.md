@@ -1,4 +1,4 @@
-# David Miller Online Store
+# Shopping Cart
 
 **Restored front-end storefront demonstrating cart state, responsive UI and browser persistence.**
 
