@@ -2,11 +2,11 @@ import monopolyImage from '../images/products-2026/monopoly.webp';
 import chessImage from '../images/products-2026/chess.webp';
 import scrabbleImage from '../images/products-2026/scrabble.webp';
 import battleshipImage from '../images/products-2026/battleship.webp';
-import trivialPursuitImage from '../images/products-2026/trivialpursuit.webp';
+import trivialPursuitImage from '../images/products-2026/trivial-pursuit.webp';
 import draughtsImage from '../images/products-2026/draughts.webp';
-import connectFourImage from '../images/products-2026/connectfour.webp';
+import connectFourImage from '../images/products-2026/connect-four.webp';
 import cluedoImage from '../images/products-2026/cluedo.webp';
-import snakesAndLaddersImage from '../images/products-2026/snakesandladders.webp';
+import snakesAndLaddersImage from '../images/products-2026/snakes-and-ladders.webp';
 import riskImage from '../images/products-2026/risk.webp';
 
 export const products = [
